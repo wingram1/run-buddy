@@ -9,34 +9,64 @@
         <!-- navigation -->
         <header>
             <h1><a href="/">RUN BUDDY</a></h1>
-            <nav>
+                <nav>
             <!-- Unordered list element -->
-            <ul>
+                <ul>
                 <!-- List item element -->
-                <li>
+                    <li>
                     <!-- Anchor element -->
-                    <a href="#what-we-do">What We Do</a>
-                </li>
-                <li>
-                    <a href="#what-you-do">What You Do</a>
-                </li>
-                <li>
-                    <a href="#your-trainers">Your Trainers</a>
-                </li>
-                <li>
-                    <a href="#reach-out">Reach Out</a>
-                </li>
-            </ul>
+                        <a href="#what-we-do">What We Do</a>
+                    </li>
+                    <li>
+                        <a href="#what-you-do">What You Do</a>
+                    </li>
+                    <li>
+                        <a href="#your-trainers">Your Trainers</a>
+                    </li>
+                    <li>
+                        <a href="#reach-out">Reach Out</a>
+                    </li>
+                </ul>
             </nav>
-            
         </header>
 
-        What We Do What You Do Your Trainer Reach Out
-
-
         <!--hero/jumbotron-->
-        <section>
+        <section class="hero">
+            <div class="hero-form">
+                <h3>Get Started Today</h3>
+                <p>Fill out this form and one of our trainers will schedule a consult</p>
+            <!--Add a form element-->
+            <form>
+                <label for="name">Enter full name:</label>
+                <input type="text" placeholder="Your Name" name="name" id="name" class="form-input"/>
+                    
+                <label for="email">Enter email address:</label>
+                <input type="email" placeholder="Email Address" name="email" id="email" class="form-input"/>
+                    
+                <label for="phone">Enter phone number:</label>
+                <input type="tel" placeholder="Phone Number" name="phone" id="phone" class="form-input"/>
+                    
+                <p>
+                    Have you worked out with a trainer before?
+                    <input type="radio" name="trainer-confirm" id="trainer-yes" />
+                    <label for="trainer-yes">Yes</label>
+                    <input type="radio" name="trainer-confirm" id="trainer-no" />
+                    <label for="trainer-no">No</label>
+                </p>
+
+                <p>
+                    Are you at least 18 years of age?
+                    <input type="checkbox" name="age-confirm" id="age-check" />
+                    <label for="age-check">Yes</label>
+                </p>
+
+                <button type="submit">
+                    Get running! :D
+                </button>
+            </form>
+            </div>
         </section>
+        <!--End Hero-->
 
         <!--"what we do" section-->
         <section>
